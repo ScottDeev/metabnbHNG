@@ -10,7 +10,7 @@ export default function Hero() {
           <label className="w-[60%]">
             <input type="text" placeholder="Search for location" className="placeholder:text-[#B8B8B8] border py-[20px] px-[15px] w-full rounded-l-[8px]" />
           </label>
-          <label className="bg-[#A02279] py-[20px] w-[40%]">
+          <label className="bg-gredient py-[20px] w-[40%]">
             <input type="submit" value="submit"  className="text-center flex justify-center w-full text-[16px] font-[400] text-white"/>
           </label>
         </form>

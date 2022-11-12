@@ -25,7 +25,7 @@ export default function Navbar({handleClickPop}) {
         </ul>
       </div>
       <div className=''>
-        <button onClick={() => handleClickPop()} className='sm:text-[16px] text-[12px] bg-[#A02279] sm:py-[15px] py-[8px] sm:px-[26px] px-[14px] rounded-[10px]'>Connect wallet</button>
+        <button onClick={() => handleClickPop()} className='sm:text-[16px] text-[12px] bg-gredient sm:py-[15px] py-[8px] sm:px-[26px] px-[14px] rounded-[10px]'>Connect wallet</button>
       </div>
       <div className="space-y-2 cursor-pointer lg:hidden block" onClick={() => handleClick()}>
         <span className="block w-6 h-0.5 bg-[#000]"></span>
@@ -42,7 +42,7 @@ export default function Navbar({handleClickPop}) {
         <ul className='flex flex-col justify-between gap-[32px] justify-center items-center'>
           {NavbarContent.links.map((l) => (
             <li key={l.id}>
-              <NavLink to={l.link}  end className='hover:bg-[#FFF301]  p-[10px] hover:text-black' href="#" onClick={() => handleClick()}>{l.tag}</NavLink>
+              <NavLink to={l.link}  end className='p-[10px]' onClick={() => handleClick()}>{l.tag}</NavLink>
             </li>
           ))}
         </ul>

@@ -10,12 +10,12 @@ export const NavbarContent= {
     {
       tag: 'Place to stay',
       id: '2',
-      link: '/'
+      link: '/placetostay'
     },
     {
       tag: 'NFTs',
       id: '3',
-      link: '/blog'
+      link: '/'
     },
     {
       tag: 'Community',

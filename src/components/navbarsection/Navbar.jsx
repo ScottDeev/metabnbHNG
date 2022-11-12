@@ -10,7 +10,7 @@ export default function Navbar() {
   }
   return (
     <div className='w-full sm:px-[100px] 
-    px-[40px]'>
+    px-[10px]'>
     <nav className='text-white py-[20px] flex justify-between items-center'>
       <div>
         <img className='sm:h-[38px] h-[25px]' src={NavbarContent.logo} alt="" />
@@ -24,13 +24,13 @@ export default function Navbar() {
           ))}
         </ul>
       </div>
-      <div className='hidden lg:block'>
-        <button className='text-[16px] bg-[#A02279] py-[15px] px-[26px] rounded-[10px]'>Connect wallet</button>
+      <div className=''>
+        <button className='sm:text-[16px] text-[12px] bg-[#A02279] sm:py-[15px] py-[8px] sm:px-[26px] px-[14px] rounded-[10px]'>Connect wallet</button>
       </div>
       <div className="space-y-2 cursor-pointer lg:hidden block" onClick={() => handleClick()}>
-        <span className="block w-8 h-0.5 bg-[#000]"></span>
-        <span className="block w-8 h-0.5 bg-[#000]"></span>
-        <span className="block w-8 h-0.5 bg-[#000]"></span>
+        <span className="block w-6 h-0.5 bg-[#000]"></span>
+        <span className="block w-6 h-0.5 bg-[#000]"></span>
+        <span className="block w-6 h-0.5 bg-[#000]"></span>
       </div>
     </nav>
     <nav className={`lg:hidden absolute h-screen w-screen ${mobileMenu} left-0  bg-[#0D0D2B] text-white justify-center z-30 transition-all duration-500 overflow-hidden`}>
@@ -45,9 +45,6 @@ export default function Navbar() {
               <NavLink to={l.link}  end className='hover:bg-[#FFF301]  p-[10px] hover:text-black' href="#" onClick={() => handleClick()}>{l.tag}</NavLink>
             </li>
           ))}
-        <div>
-          <button className='text-[16px] bg-[#A02279] py-[15px] px-[26px] rounded-[10px]'>Connect wallet</button>
-        </div>
         </ul>
       </div>
     </nav>

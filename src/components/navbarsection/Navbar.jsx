@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { NavbarContent } from './NavbarContent'
 
-export default function Navbar() {
+export default function Navbar({handleClickPop}) {
   const [mobileMenu, setMobileMenu] = useState('top-[-100vh]')
   const handleClick =()=>{
     document.body.classList.toggle('overflow-hidden')
@@ -25,7 +25,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className=''>
-        <button className='sm:text-[16px] text-[12px] bg-[#A02279] sm:py-[15px] py-[8px] sm:px-[26px] px-[14px] rounded-[10px]'>Connect wallet</button>
+        <button onClick={() => handleClickPop()} className='sm:text-[16px] text-[12px] bg-[#A02279] sm:py-[15px] py-[8px] sm:px-[26px] px-[14px] rounded-[10px]'>Connect wallet</button>
       </div>
       <div className="space-y-2 cursor-pointer lg:hidden block" onClick={() => handleClick()}>
         <span className="block w-6 h-0.5 bg-[#000]"></span>

@@ -1,3 +1,5 @@
+import { useState } from "react";
+import Overlay from "../components/card/Overlay";
 import CardSection from "../components/homecomponents/CardSection";
 import Hero from "../components/homecomponents/Hero";
 import Metabnb from "../components/homecomponents/Metabnb";
@@ -11,7 +13,6 @@ export default function Home() {
       <TagLine/>
       <CardSection/>
       <Metabnb/>
-      <Popup/>
     </>
   )
 }

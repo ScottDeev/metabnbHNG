@@ -12,9 +12,9 @@ export default function Navbar({handleClickPop}) {
     <div className='w-full sm:px-[100px] 
     px-[10px]'>
     <nav className='text-white py-[20px] flex justify-between items-center'>
-      <div>
+      <NavLink to='/'>
         <img className='sm:h-[38px] h-[25px]' src={NavbarContent.logo} alt="" />
-      </div>
+      </NavLink>
       <div className='justify-between gap-[40px] text-[18px] items-center  flex '>
         <ul className='lg:flex justify-between sm:gap-[25px] gap-[10px] hidden'>
           {NavbarContent.links.map((l) => (
@@ -33,7 +33,7 @@ export default function Navbar({handleClickPop}) {
         <span className="block w-6 h-0.5 bg-[#000]"></span>
       </div>
     </nav>
-    <nav className={`lg:hidden absolute h-screen w-screen ${mobileMenu} left-0  bg-[#0D0D2B] text-white justify-center z-30 transition-all duration-500 overflow-hidden`}>
+    <nav className={`lg:hidden absolute h-screen w-screen ${mobileMenu} left-0  bg-gredient text-white justify-center z-30 transition-all duration-500 overflow-hidden`}>
       <div className=' gap-[32px] text-[18px] flex-col flex justify-center h-screen items-center relative'>
         <div className=" cursor-pointer block absolute top-[60px] right-[30px]" onClick={() => handleClick()}>
           <span className="block w-12 h-1 bg-[#ffff] rotate-45 translate-y-[10px] translate-x-[8px]"></span>
